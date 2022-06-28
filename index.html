@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>TP AJAX JSON</title>
+    <style>
+      .play {
+        border: 5px solid green;
+      }
+      .pause {
+        border: 5px solid #e45343;
+      }
+      img {
+        width: 100px;
+        height: 100px;
+        margin: 10px;
+      }
+      table {
+        border: 1px solid black;
+      }
+      th {
+        width: 20%;
+        text-align: left;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1>Spotify</h1>
+    </div>
+    <form id="fm">
+      <fieldset>
+        <legend>Recherche d'albums dans Spotify</legend>
+        <label for="artiste">Mot clé : </label><input id="motcle" type="text" />
+        <input type="submit" />
+      </fieldset>
+    </form>
+    <div id="albums"></div>
+    <table>
+      <caption>
+        Informations sur le disque
+      </caption>
+      <tr>
+        <th>Titre du disque</th>
+        <td id="disque"></td>
+      </tr>
+      <tr>
+        <th>Nom du chanteur</th>
+        <td id="chanteur"></td>
+      </tr>
+      <tr>
+        <th>Titres des chansons</th>
+        <td id="chansons"></td>
+      </tr>
+    </table>
+
+    <script src="spotify.js"></script>
+  </body>
+</html>
