@@ -1,0 +1,18 @@
+.play {
+    border: 5px solid green;
+  }
+  .pause {
+    border: 5px solid #e45343;
+  }
+  img.album {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+  }
+  table {
+    border: 1px solid black;
+  }
+  th {
+    width: 20%;
+    text-align: left;
+  }
