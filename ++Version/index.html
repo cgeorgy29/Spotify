@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./bulma/css/bulma.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="./img/logo.png" />
+
+    <title>TP AJAX JSON</title>
+  </head>
+  <body>
+    <section class="section">
+    <div>
+      <h1 class="title is-2">Spotify ISIS <img style="height: 40px; border-radius: 10%;" src="./img/logo.png"/></h1>
+    <form id="fm">
+      <fieldset>
+        <legend>Recherche d'albums dans Spotify</legend>
+        <label class="label" for="artiste">Recherche <span class="icon is-right">
+          <img src="./img/search.png">
+        </span></label>
+        <div class="field has-addons">
+          <input class="input" id="motcle" type="text" />
+          <input class="button is-success" type="submit" />
+        </div>
+      </fieldset>
+    </form>
+    <div id="albums"></div>
+    <table class="table is-hoverable">
+      <caption>
+        Informations sur le disque
+      </caption>
+      <tr>
+        <th>Titre du disque</th>
+        <td id="disque"></td>
+      </tr>
+      <tr>
+        <th>Nom du chanteur</th>
+        <td id="chanteur"></td>
+      </tr>
+      <tr>
+        <th>Titres des chansons</th>
+        <td><ul type="1" id="tracklist"></ul></td>
+      </tr>
+    </table>
+
+    <script src="spotify.js"></script>
+  </div>
+  </section>
+  </body>
+</html>
